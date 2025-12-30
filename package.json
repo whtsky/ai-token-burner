@@ -1,0 +1,99 @@
+{
+  "name": "ai-token-burner",
+  "displayName": "AI Token Burner",
+  "description": "Help Your AI Stay Active and Engaged — By sending friendly, automated chat prompts, this extension keeps your AI from falling behind on its exercise regimen.",
+  "version": "0.0.1",
+  "publisher": "whtsky",
+  "repository": "https://github.com/whtsky/ai-token-burner",
+  "license": "MIT",
+  "icon": "assets/icon.png",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Machine Learning",
+    "Chat"
+  ],
+  "keywords": [
+    "ai",
+    "copilot",
+    "chatgpt",
+    "claude",
+    "token",
+    "automation",
+    "llm",
+    "assistant"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "configuration": {
+      "title": "AI Token Burner",
+      "properties": {
+        "aiTokenBurner.autoStart": {
+          "type": "boolean",
+          "default": false,
+          "description": "Automatically start burning tokens when VS Code starts"
+        },
+        "aiTokenBurner.intervalMinutes": {
+          "type": "number",
+          "default": 30,
+          "minimum": 1,
+          "description": "Interval in minutes between burn cycles"
+        }
+      }
+    },
+    "commands": [
+      {
+        "command": "aiTokenBurner.showMenu",
+        "title": "AI Token Burner: Show Menu"
+      },
+      {
+        "command": "aiTokenBurner.enable",
+        "title": "AI Token Burner: Enable Burn Mode"
+      },
+      {
+        "command": "aiTokenBurner.disable",
+        "title": "AI Token Burner: Disable Burn Mode"
+      },
+      {
+        "command": "aiTokenBurner.burnNow",
+        "title": "AI Token Burner: Trigger Burn Now"
+      },
+      {
+        "command": "aiTokenBurner.selectModel",
+        "title": "AI Token Burner: Select Model"
+      },
+      {
+        "command": "aiTokenBurner.setInterval",
+        "title": "AI Token Burner: Set Interval"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "package": "vsce package",
+    "build": "npm run compile && npm run package",
+    "prepare": "husky"
+  },
+  "prettier": "@whtsky/prettier-config",
+  "lint-staged": {
+    "*": "prettier --write --ignore-unknown"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "@types/vscode": "^1.85.0",
+    "@vscode/vsce": "^3.7.1",
+    "@whtsky/prettier-config": "^1.0.1",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.7",
+    "prettier": "^3.7.4",
+    "typescript": "^5.3.0"
+  }
+}
