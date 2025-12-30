@@ -5,6 +5,10 @@
   "version": "0.0.1",
   "publisher": "whtsky",
   "repository": "https://github.com/whtsky/ai-token-burner",
+  "homepage": "https://github.com/whtsky/ai-token-burner#readme",
+  "bugs": {
+    "url": "https://github.com/whtsky/ai-token-burner/issues"
+  },
   "license": "MIT",
   "icon": "assets/icon.png",
   "engines": {
@@ -12,7 +16,9 @@
   },
   "categories": [
     "Machine Learning",
-    "Chat"
+    "Chat",
+    "Other",
+    "AI"
   ],
   "keywords": [
     "ai",
