@@ -1,6 +1,12 @@
 name: CI
 
-on: [push, pull_request]
+on:
+  push:
+    branches:
+      - '**'
+    tags:
+      - 'v*'
+  pull_request:
 
 jobs:
   build:
@@ -32,3 +38,9 @@ jobs:
         with:
           name: ai-token-burner.vsix
           path: '*.vsix'
+
+      - name: Create GitHub Release
+        if: github.ref_type == 'tag'
+        uses: softprops/action-gh-release@v2
+        with:
+          files: '*.vsix'
