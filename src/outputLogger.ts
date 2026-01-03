@@ -12,6 +12,10 @@ export class OutputLogger implements vscode.Disposable {
     this.outputChannel.appendLine(`[${timestamp}] ${message}`)
   }
 
+  show(): void {
+    this.outputChannel.show()
+  }
+
   dispose(): void {
     this.outputChannel.dispose()
   }

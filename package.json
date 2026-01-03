@@ -75,6 +75,10 @@
       {
         "command": "aiTokenBurner.setInterval",
         "title": "AI Token Burner: Set Interval"
+      },
+      {
+        "command": "aiTokenBurner.showOutput",
+        "title": "AI Token Burner: Show Output"
       }
     ]
   },

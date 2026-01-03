@@ -32,6 +32,9 @@ export function activate(context: vscode.ExtensionContext) {
     vscode.commands.registerCommand('aiTokenBurner.setInterval', () => {
       statusBar.showIntervalInput()
     }),
+    vscode.commands.registerCommand('aiTokenBurner.showOutput', () => {
+      outputLogger.show()
+    }),
   )
 
   // Listen for configuration changes
