@@ -2,6 +2,8 @@
 
 Help Your AI Stay Active and Engaged — By sending friendly, automated chat prompts, this extension keeps your AI from falling behind on its exercise regimen.
 
+![Screenshot](assets/screenshot.png)
+
 ## Features
 
 - **Automated AI Activity**: Sends small requests at a configurable interval using the VS Code LLM API

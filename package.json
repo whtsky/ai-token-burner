@@ -4,7 +4,10 @@
   "description": "Help Your AI Stay Active and Engaged — By sending friendly, automated chat prompts, this extension keeps your AI from falling behind on its exercise regimen.",
   "version": "0.0.1",
   "publisher": "whtsky",
-  "repository": "https://github.com/whtsky/ai-token-burner",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/whtsky/ai-token-burner"
+  },
   "homepage": "https://github.com/whtsky/ai-token-burner#readme",
   "bugs": {
     "url": "https://github.com/whtsky/ai-token-burner/issues"
