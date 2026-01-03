@@ -8,3 +8,5 @@ node_modules/**
 *.vsix
 .gitignore
 tsconfig.json
+AGENTS.md
+CLAUDE.md
