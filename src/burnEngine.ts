@@ -60,6 +60,7 @@ export class BurnEngine implements vscode.Disposable {
     this.startTimer()
     this.stateChangeEmitter.fire()
     this.logger.log('Burn mode enabled')
+    this.performBurn()
   }
 
   disable(): void {
