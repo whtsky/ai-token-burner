@@ -58,3 +58,13 @@ docs: add bugs & homepage field
 
 - Status bar not updating after changing interval
 ```
+
+## Releasing
+
+When creating a release:
+
+1. Update `package.json` version
+2. In CHANGELOG.md, rename `[Unreleased]` to the version number with date (e.g., `[0.0.2] - 2026-01-04`)
+3. **Remove** the `[Unreleased]` heading entirely - do NOT leave an empty Unreleased section
+4. Commit with message: `chore: release vX.X.X`
+5. Create and push the version tag (e.g., `v0.0.2`)

@@ -2,7 +2,7 @@
   "name": "ai-token-burner",
   "displayName": "AI Token Burner",
   "description": "Help Your AI Stay Active and Engaged — By sending friendly, automated chat prompts, this extension keeps your AI from falling behind on its exercise regimen.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "whtsky",
   "repository": {
     "type": "git",
